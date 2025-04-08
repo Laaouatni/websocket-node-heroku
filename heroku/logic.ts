@@ -19,6 +19,6 @@ export function thisLogic() {
   });
 
   httpServer.listen(3000, () => {
-    console.log("🚀 Socket.IO server in ascolto su http://localhost:3000");
+    console.log("🚀 Socket.IO server in ascolto PORTA 3000");
   });
 }
