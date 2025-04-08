@@ -18,7 +18,9 @@ export function thisLogic() {
     });
   });
 
-  httpServer.listen(3000, () => {
-    console.log("🚀 Socket.IO server in ascolto PORTA 3000");
+  const PORT = process.env.PORT || 3000;
+
+  httpServer.listen(PORT, () => {
+    console.log("🚀 Socket.IO server in ascolto PORTA ", PORT);
   });
 }
